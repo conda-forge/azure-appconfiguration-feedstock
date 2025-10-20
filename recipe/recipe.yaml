@@ -2,15 +2,15 @@ schema_version: 1
 
 context:
   name: azure-appconfiguration
-  version: 1.7.1
+  version: "1.7.2"
 
 package:
   name: ${{ name|lower }}
   version: ${{ version }}
 
 source:
-  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/azure-appconfiguration-${{ version }}.tar.gz
-  sha256: 3ebe41e9be3f4ae6ca61e5dbc42c4b7cc007a01054a8506501a26dfc199fd3ec
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
+  sha256: cefd75b298b898a8ed9f73048f3f39f4e81059a58cd832d0523787fc1d912a06
 
 build:
   number: 0
