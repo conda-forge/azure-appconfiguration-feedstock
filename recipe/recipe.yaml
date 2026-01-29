@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: azure-appconfiguration
-  version: 1.7.2
+  version: "1.8.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: cefd75b298b898a8ed9f73048f3f39f4e81059a58cd832d0523787fc1d912a06
+  sha256: 168e7b01b350f5d806a2d935a8ec3694c59c6394d5a1c409eb05fef0b56b1aa0
 
 build:
   number: 0
