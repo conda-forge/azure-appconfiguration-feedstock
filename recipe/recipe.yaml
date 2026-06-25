@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: azure-appconfiguration
-  version: "1.8.1"
+  version: 1.9.0
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 4249729f8bc80b200ff081afc64e8c3e6383f3e2f5b496e42e3b81d7e75a5252
+  sha256: 399677f56348e9107d7a97a7e47db6723c7d2c617fedbea6881eda7b8eed995b
 
 build:
   number: 0
@@ -24,7 +24,7 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - azure-core >=1.30.0
+    - azure-core >=1.37.0
     - isodate >=0.6.1
     - typing_extensions >=4.6.0
 tests:
